@@ -9,7 +9,7 @@ accessed with detailed history and statistics.
 ## Live Demo
 
 - **Deployed API (FastAPI)**: [https://safran-api.onrender.com/docs](https://safran-api.onrender.com/docs)
-- **Streamlit UI**: [https://safran-ui.streamlit.app](https://safran-ui.streamlit.app)
+- **Streamlit UI**: [https://safran-api.streamlit.app](https://safran-api.streamlit.app)
 
 ## Tech Stack
 
@@ -46,7 +46,7 @@ Once running locally:
 Deployed version:
 
 - **Deployed API (FastAPI)**: [https://safran-api.onrender.com/docs](https://safran-api.onrender.com/docs)
-- **Streamlit UI**: [https://safran-ui.streamlit.app](https://safran-ui.streamlit.app)
+- **Streamlit UI**: [https://safran-api.streamlit.app](https://safran-api.streamlit.app)
 
 ---
 
