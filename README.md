@@ -1,22 +1,24 @@
 # Image Classifier
 
-This project is an image classification platform powered by **FastAPI** and **Streamlit**. Users can register, log in,
-upload images, and get predictions using a pre-trained ONNX model. All predictions are securely stored and can be
-accessed with detailed history and statistics.
+This project is an image classification platform powered by **FastAPI** and **Streamlit**. Users can register, log in, upload images, and get predictions using a pre-trained ONNX model. All predictions are securely stored and can be accessed with detailed history and statistics.
 
 ---
 
 ## Live Demo
 
-- **Deployed API (FastAPI)**: [https://safran-api.onrender.com/docs](https://safran-api.onrender.com/docs)
-- **Streamlit UI**: [https://safran-api.streamlit.app](https://safran-api.streamlit.app)
+- ✅ **Deployed API (FastAPI)**: [https://safran-api.onrender.com/docs](https://safran-api.onrender.com/docs)
+- ⚠️ **Streamlit UI (Temporarily Failing)**: [https://safran-api.streamlit.app](https://safran-api.streamlit.app)
+
+> The Streamlit Cloud deployment is currently not working. Please follow the local instructions below to run the UI.
+
+---
 
 ## Tech Stack
 
-- **Backend**: FastAPI + ONNX + SQLAlchemy + SQLite/PostgreSQL
-- **Frontend**: Streamlit
-- **Authentication**: JWT (OAuth2 Password Bearer)
-- **Model**: ResNet18 in ONNX format
+- **Backend**: FastAPI + ONNX + SQLAlchemy + SQLite/PostgreSQL  
+- **Frontend**: Streamlit  
+- **Authentication**: JWT (OAuth2 Password Bearer)  
+- **Model**: ResNet18 in ONNX format  
 
 ---
 
@@ -45,8 +47,7 @@ Once running locally:
 
 Deployed version:
 
-- **Deployed API (FastAPI)**: [https://safran-api.onrender.com/docs](https://safran-api.onrender.com/docs)
-- **Streamlit UI**: [https://safran-api.streamlit.app](https://safran-api.streamlit.app)
+- [https://safran-api.onrender.com/docs](https://safran-api.onrender.com/docs)
 
 ---
 
@@ -74,22 +75,22 @@ Deployed version:
 
 ## Frontend UI (Streamlit)
 
-### Run the Streamlit app
+### Run the Streamlit app locally
 
 ```bash
 streamlit run streamlit_app.py
 ```
 
-> ✅ Make sure the FastAPI backend is running **before** launching Streamlit.
+ Make sure the FastAPI backend is running **before** launching Streamlit.
 
 ### Features
 
-- User registration and login
-- JWT-based token storage with session
-- Upload and classify `.jpg`, `.png`, `.webp` images
-- View prediction history and see uploaded images
-- View statistics of predictions
-- Log out to reset session
+- User registration and login  
+- JWT-based token storage with session  
+- Upload and classify `.jpg`, `.png`, `.webp` images  
+- View prediction history and see uploaded images  
+- View statistics of predictions  
+- Log out to reset session  
 
 ---
 
@@ -124,18 +125,18 @@ pip install -r requirements.txt
 
 ## Example Usage (Swagger)
 
-1. Go to `http://localhost:8000/docs`
-2. Register a new user via `/register`
-3. Log in using `/login` and copy the access token
-4. Click the 🔒 "Authorize" button and paste the token as `Bearer <token>`
+1. Go to `http://localhost:8000/docs`  
+2. Register a new user via `/register`  
+3. Log in using `/login` and copy the access token  
+4. Click the 🔒 "Authorize" button and paste the token as `Bearer <token>`  
 5. Now you can call `/predict`, `/predictions`, `/stats`, etc.
 
 ---
 
 ## Model Info
 
-- ONNX model used: `resnet18.onnx`
-- Supports: `.jpg`, `.jpeg`, `.png`, `.webp`
-- Automatically saves predictions and user inputs to database
+- ONNX model used: `resnet18.onnx`  
+- Supports: `.jpg`, `.jpeg`, `.png`, `.webp`  
+- Automatically saves predictions and user inputs to database  
 
 ---
