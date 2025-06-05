@@ -4,7 +4,7 @@ import requests
 import streamlit as st
 from PIL import Image
 
-API_URL = "http://localhost:8000"  # Update if deployed
+API_URL = "https://safran-api.onrender.com"
 
 st.set_page_config(page_title="Safran Image Classifier", layout="centered")
 st.title("Image Classifier")

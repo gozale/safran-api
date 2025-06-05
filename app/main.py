@@ -6,7 +6,7 @@ from app.routes import auth, predict
 Base.metadata.create_all(bind=engine)
 
 app = FastAPI(
-    title="Safran AI Prediction API",
+    title="Image Classification API",
     version="1.0.0",
     description="""
 Safran AI API enables users to perform image-based predictions using a deep learning model (ONNX runtime). The API offers authentication, inference, and data retrieval features.

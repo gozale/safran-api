@@ -6,6 +6,11 @@ accessed with detailed history and statistics.
 
 ---
 
+## Live Demo
+
+- **Deployed API (FastAPI)**: [https://safran-api.onrender.com/docs](https://safran-api.onrender.com/docs)
+- **Streamlit UI**: [https://safran-ui.streamlit.app](https://safran-ui.streamlit.app)
+
 ## Tech Stack
 
 - **Backend**: FastAPI + ONNX + SQLAlchemy + SQLite/PostgreSQL
@@ -33,10 +38,15 @@ uvicorn app.main:app --reload
 
 ### API Documentation
 
-Once running, visit:
+Once running locally:
 
 - Swagger UI: `http://localhost:8000/docs`
 - ReDoc: `http://localhost:8000/redoc`
+
+Deployed version:
+
+- **Deployed API (FastAPI)**: [https://safran-api.onrender.com/docs](https://safran-api.onrender.com/docs)
+- **Streamlit UI**: [https://safran-ui.streamlit.app](https://safran-ui.streamlit.app)
 
 ---
 
